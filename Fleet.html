@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #A2BCAA; 
+    }  
+
+    .topnav {
+      background-color: #006400; 
+      overflow: hidden;
+      border-radius: 100px;
+      padding: 14px 16px;
+      color: white;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      border-radius: 100px;
+    }
+
+    .topnav a:hover {
+      background-color: #A2BCAA; 
+    }
+
+    .topnav a.active {
+      background-color: #A2BCAA; 
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    h1, h2, p {
+      border-radius: 100px;
+      border: 4px solid #006400; 
+      background-color: #C9D9D7; 
+      padding: 14px 16px;
+      text-align: center;
+      color: #36460D;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .fleet-info {
+      margin: 20px;
+    }
+
+    .fleet-info table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .fleet-info th, .fleet-info td {
+      border: 2px solid #006400;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .fleet-info th {
+      background-color: #006400;
+      color: white;
+    }
+
+    .fleet-photos {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .fleet-photos img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {
+        display: none;
+      }
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <h1>GreenTrack Logistics Fleet.</h1> 
+</div>
+
+<div class="topnav" id="myTopnav">
+  <a href="GreenTrack.html">Home</a>
+  <a href="fleet.html" class="active">Our Fleet</a>
+  <a href="booking.html">Send With Us</a>
+ 
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <img src="" style="max-width:100%; height:auto;">
+  </a>
+</div>
+
+<h2><b>Our Fleet: BR Class 88 Locomotives (UK)</b></h2> 
+
+<div class="fleet-info">
+  <table>
+    <tr>
+      <th>Locomotive Number</th>
+      <th>Manufacture Date</th>
+      <th>Max Speed (km/h)</th>
+      <th>Power Output (kW)</th>
+    </tr>
+    <tr>
+      <td>88001</td>
+      <td>2017</td>
+      <td>177</td>
+      <td>7000</td>
+    </tr>
+    <tr>
+      <td>88002</td>
+      <td>2017</td>
+      <td>177</td>
+      <td>7000</td>
+	</tr>
+	<td>88003</td>
+      <td>2017</td>
+      <td>177</td>
+      <td>7000</td>
+    </tr>
+	<td>88004</td>
+      <td>2018</td>
+      <td>177</td>
+      <td>7000</td>
+    </tr>
+  </table>
+</div>
+
+<h2><b>Our Fleet: National Rail Class Locomotives (Australia)</b></h2> 
+
+<div class="fleet-info">
+  <table>
+    <tr>
+      <th>Locomotive Number</th>
+      <th>Manufacture Date</th>
+      <th>Max Speed (km/h)</th>
+      <th>Power Output (kW)</th>
+    </tr>
+    <tr>
+      <td>NR30</td>
+      <td>1997</td>
+      <td>115</td>
+      <td>3000</td>
+    </tr>
+    <tr>
+      <td>NR92</td>
+      <td>1998</td>
+      <td>115</td>
+      <td>3000</td>
+</tr>
+  </table>
+</div>
+
+<div class="fleet-photos">
+  <h2><b>Fleet Photos</b></h2>
+  <img src="https://www.railadvent.co.uk/wp-content/uploads/2017/03/MDE-DRS-88002.jpg" alt="Locomotive 1">
+  <img src="https://www.directrailservices.com/wp-content/uploads/2020/09/88-2.jpg" alt="Locomotive 2">
+  <img src="https://www.railadvent.co.uk/wp-content/uploads/2020/01/Class-88-for-web-1278x720.jpg" alt="Locomotive 3">
+  <img src="https://assets.publishing.service.gov.uk/media/5f5f8363d3bf7f723c19cb0b/class-88.jpg" alt="Locomotive 4">
+  <img src="https://www.sdsmodels.com.au/nr30h.jpg" alt="Locomotive 5">
+  <img src="https://trains.chookman.id.au/pn/nr92.jpg" alt="Locomotive 6">
+</div>
+
+</body>
+</html>

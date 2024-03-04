@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #A2BCAA; 
+    }  
+
+    .topnav {
+      background-color: #006400; 
+      overflow: hidden;
+      border-radius: 100px;
+      padding: 14px 16px;
+      color: white;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      border-radius: 100px;
+    }
+
+    .topnav a:hover {
+      background-color: #A2BCAA; 
+    }
+
+    .topnav a.active {
+      background-color: #A2BCAA; 
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    h1, h2, p {
+      border-radius: 100px;
+      border: 4px solid #006400; 
+      background-color: #C9D9D7; 
+      padding: 14px 16px;
+      text-align: center;
+      color: #36460D;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {
+        display: none;
+      }
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <h1>Send with GreenTrack.</h1> 
+</div>
+
+<div class="topnav" id="myTopnav">
+  <a href="GreenTrack.html" class="active">Home</a>
+  <a href="Fleet.html">Our Fleet</a>
+  <a href="booking.html">Send With Us</a>
+ 
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <img src="" style="max-width:100%; height:auto;">
+  </a>
+</div>
+<h2><b>Sending Freight is Easy With GreenTrack.</b></h2> 
+<table>
+<tr>
+<td width="1500px">
+
+<p>please fill in the form below to tell us your contact details and additional information, then we will provide a quote.</p>
+
+<form id="bookingForm" action="https://script.google.com/macros/s/AKfycbwA_HE2w7Npz5jeEX5LmqwQtc5CkLH2AdFEs1QgeTTns5XR5X3r_kKpbdIX4UskSN4umQ/exec" method="POST">
+  <p> Your organisation/company/personal name: <input type="text" name="fname"><br><br>
+  <p> Contact number: <input type="text" name="pnumber"><br><br>
+  <p> Email: <input type="text" name="email"><br><br>
+  <p> Rail corridor you wish to transport your freight(Sydney to Melbourne, Melbourne to Sydney, London to Paris, Paris to London or cities in the East Coast Main Line): <input type="text" name="corridor"><br><br>
+  <p> Do you have your own shipping container(Give measurements, must be standard), or do you wish to hire a 20ft container one for $5/day or a 40ft container for $9/day?: <input type="text" name="container"><br><br>
+  <p> What will be in the container and give an estimated weight: <input type="text" name="item"><br><br>
+  <p> Any additional details you believe is necessary: <input type="text" name="detail"><br><br></p>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+  document.getElementById("bookingForm").submit();
+  setTimeout(function() {
+    window.location.href = "Thanks.html";
+  }, 1000); // Redirect after 1 second (adjust as needed)
+}
+</script>
+
